@@ -1,0 +1,31 @@
+@require "variables"
+
+html
+	font-family font
+	font-size fontSize
+	background-color backgroundColor
+	color foregroundColor
+
+p
+	font-size 0.9em
+
+a
+	color linkColor
+	text-decoration none
+	&:hover
+		text-decoration underline
+
+.main-content
+	margin-left 2em
+	margin-right 2em
+	padding 0 1em
+	border-left 1px solid borderColor
+	border-right 1px solid borderColor
+
+#page-header
+	text-align center
+	margin-bottom 0
+
+@require "headers"
+@require "recent"
+@require "links-bar"

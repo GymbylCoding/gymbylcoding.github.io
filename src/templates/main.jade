@@ -1,0 +1,30 @@
+doctype xhtml
+html(lang="en")
+  head
+    title= title || header
+    link(rel="stylesheet", href="resources/index.css", type="text/css")
+  body
+    h1#page-header= header
+    #links-bar
+      a.site-link(href="index.html") home
+      = " | "
+      a.site-link(href="http://www.gymbyl.com") my 'real' website
+      = " | "
+      a.site-link(href="http://www.github.com/GymbylCoding") me on GitHub
+    .main-content
+      - var alternate = false;
+      - var recentBegun = false;
+      each elem in content
+        if elem[0] === "p"
+          p= elem[1]
+        else if elem[0] === "header"
+          h2= elem[1]
+        else if elem[0] === "recent"
+          .recent(class=alternate ? "alternate" : "")
+            h2.recent-header: a(href=elem[1].url)= elem[1].title
+            h5.recent-date= elem[1].date
+            
+          - recentBegun = true;
+          - alternate = !alternate;
+        else
+          #{elem[0]}= elem[1]

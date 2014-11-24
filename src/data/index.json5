@@ -1,0 +1,42 @@
+{
+	title: "Home Page",
+	header: "Home Page",
+	content: [
+		["p", "Testing 1-2-3..."],
+		[
+			"recent", {
+				title: "Test Page",
+				url: "test-page.html",
+				date: "Some Time Recently"
+			}
+		],
+		[
+			"recent", {
+				title: "Test Page",
+				url: "test-page.html",
+				date: "Some Time Recently"
+			}
+		],
+		[
+			"recent", {
+				title: "Test Page",
+				url: "test-page.html",
+				date: "Some Time Recently"
+			}
+		],
+		[
+			"recent", {
+				title: "Test Page",
+				url: "test-page.html",
+				date: "Some Time Recently"
+			}
+		],
+		[
+			"recent", {
+				title: "Test Page",
+				url: "test-page.html",
+				date: "Some Time Recently"
+			}
+		]
+	]
+}
