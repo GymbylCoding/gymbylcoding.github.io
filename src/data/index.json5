@@ -4,35 +4,35 @@
 	content: [
 		["p", "Testing 1-2-3..."],
 		[
-			"recent", {
+			"link", {
 				title: "Test Page",
 				url: "test-page.html",
 				date: "Some Time Recently"
 			}
 		],
 		[
-			"recent", {
+			"link", {
 				title: "Test Page",
 				url: "test-page.html",
 				date: "Some Time Recently"
 			}
 		],
 		[
-			"recent", {
+			"link", {
 				title: "Test Page",
 				url: "test-page.html",
 				date: "Some Time Recently"
 			}
 		],
 		[
-			"recent", {
+			"link", {
 				title: "Test Page",
 				url: "test-page.html",
 				date: "Some Time Recently"
 			}
 		],
 		[
-			"recent", {
+			"link", {
 				title: "Test Page",
 				url: "test-page.html",
 				date: "Some Time Recently"

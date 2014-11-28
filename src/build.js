@@ -9,12 +9,10 @@ var fs = require("fs"),
 		jade = require("jade"),
 		JSON5 = require("json5");
 
-// Compile a function
 var template = jade.compileFile("templates/main.jade", {pretty: true});
 
 var files = [
-	"index",
-	"test-page"
+	"index"
 ]
 
 for (var i = 0; i < files.length; i++) {
