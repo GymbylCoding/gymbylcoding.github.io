@@ -8,6 +8,7 @@ html
 
 p
 	font-size 0.9em
+	line-height 1.25em
 
 a
 	color linkColor
@@ -15,12 +16,19 @@ a
 	&:hover
 		text-decoration underline
 
-.main-content
+#main-content
 	margin-left 2em
 	margin-right 2em
 	padding 0 1em
 	border-left 1px solid borderColor
 	border-right 1px solid borderColor
+	margin-bottom: 10em
+
+.smaller
+	font-size 0.8em
+
+.italic
+	font-style italic
 
 #page-header
 	text-align center
@@ -29,3 +37,4 @@ a
 @require "headers"
 @require "link"
 @require "links-bar"
+@require "code"

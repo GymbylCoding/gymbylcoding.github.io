@@ -1,7 +1,0 @@
-{
-	title: "Test Page",
-	header: "Test Page",
-	content: [
-		["p", "This is a test page."]
-	]
-}

@@ -1,0 +1,26 @@
+{
+	title: "Dusk's Own Serialization Format",
+	date: "November 30, 2014",
+	content: [
+		["p", "For my first post on my new, shiny code website, why not demonstrate a cool new feature of <a href=\"http://www.github.com/GymbylCoding/Dusk-Engine\">Dusk</a>? I've been working on a new serialization notation, specifically created for conciseness, readability, flexibility, embedding simplicity, and lightweight-ness. The product of my work is Bang, a new serialization notation meant to be Dusk's \"native\" format."],
+		["p", "Want a peek at some Bang notation? Here you go, in both JSON and Bang."],
+		["hs", "JSON"],
+		["code", "{\n\
+	\"key1\": true,\n\
+	\"key2\": \"abc\",\n\
+	\"key3\": [1, 2, 3, 4, 5],\n\
+	\"key4\": 1234567890\n\
+}\n"],
+		["hs", "Bang"],
+		["code", "key1: true\n\
+key2: abc\n\
+key3: {1 2 3 4 5}\n\
+key4: 1234567890"],
+		["p", "The first difference between Bang and JSON you'll probably notice is that Bang has far less syntactic \"noise\" than JSON. One of Bang's aims is conciseness - when you're writing properties for your maps in Tiled, you've got to economize on space. JSON requires you to surround your table in curly braces or brackets, and (worse) requires you to place quotes around every identifier and commas after every value. None of that's needed. Bang uses no brackets or braces around the base table, allows you to omit quotes if strings - keys <font class=\"italic\">or</font> values - are valid identifiers, and makes commas completely optional. Of course, if your fingers are cold some day, you can work them out by adding quotes around your strings and commas after your values. That's perfectly okay with Bang."],
+		["p", "Something Bang has that wasn't shown in the sample is the idea of non-separate arrays and dictionaries. Lua has no distinctions between arrays and dictionaries, so a serialization language for Lua shouldn't have distinctions either. Bang is used to encode tables, not dictionaries and arrays, so you can mix array elements and dictionary elements together in one structure:"],
+		["code", "key: value \"arrayElementWithQuotes\" arrayElementWithoutQuotes, keyWithComma: true, arrayElementFinishingThingsOff"],
+		["p", "And here's another cool thing about Bang: the name. I picked the name \"Bang\" for a special reason - guess how you embed Bang notation in a Tiled property? To embed JSON, you prefix your value with <code>!json!</code>. To embed Bang, you prefix your value with <code>!!!</code> - the \"this is a special prefix\" exclamation marks with a \"bang\" symbol between them. The simple prefix makes Tiled properties very readable."],
+		["p", "Finally, Bang is also extremely lightweight. Bang doesn't bloat Dusk up any - the whole library is only 88 lines long, counting blank lines and comments. Taking out comments and blank lines, it's only 44 lines."],
+		["p", "Bang is built into Dusk as of today. Enjoy!"]
+	]
+}

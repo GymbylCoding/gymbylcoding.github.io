@@ -6,6 +6,7 @@ html {
 }
 p {
   font-size: 0.9em;
+  line-height: 1.25em;
 }
 a {
   color: #77e;
@@ -14,12 +15,19 @@ a {
 a:hover {
   text-decoration: underline;
 }
-.main-content {
+#main-content {
   margin-left: 2em;
   margin-right: 2em;
   padding: 0 1em;
   border-left: 1px solid #666;
   border-right: 1px solid #666;
+  margin-bottom: 10em;
+}
+.smaller {
+  font-size: 0.8em;
+}
+.italic {
+  font-style: italic;
 }
 #page-header {
   text-align: center;
@@ -68,4 +76,29 @@ h6 {
   font-size: 0.9em;
   text-align: center;
   margin-top: 1em;
+}
+code {
+  font-family: "Anonymous Pro", "Source Code Pro", "Lucida Console", "Courier New", "Consolas", "Droid Sans Mono", monospace;
+  color: #222;
+  background-color: #ddd;
+  border: 1px solid #999;
+  border-radius: 0.5em;
+  padding: 1px 3px;
+}
+pre {
+  margin: 5px;
+  padding: 5px;
+  overflow: auto;
+  border: 1px solid #999;
+  border-radius: 0.25em;
+  background-color: #ddd;
+}
+pre code {
+  background: none;
+  border: none;
+  margin: 0;
+  padding: 0;
+  border-radius: 0;
+  font-size: 0.8em;
+  width: 100%;
 }

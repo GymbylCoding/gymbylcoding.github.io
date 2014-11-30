@@ -1,6 +1,6 @@
 ### `gymbylcoding.github.io`
 
-Sources for my 'tech-blog' website. Currently unfinished (obviously).
+Sources for my 'tech-blog' GitHub pages website.
 
 Uses
 * Node.js for build script
