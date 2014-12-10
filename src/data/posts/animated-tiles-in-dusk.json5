@@ -1,0 +1,12 @@
+{
+	title: "Animated Tiles in Dusk",
+	date: "December 10, 2014",
+	content: [
+		["p", "Dusk now includes an early version of animated tiles! All you have to do is specify <code>anim:enabled</code> as <code>true</code> (just like physics) in Tiled on your tile properties for a tile, then <code>anim:options</code> for the animation options. <code>anim:options</code> is a table (encoded with <a href=\"dusks-own-serialization-format.html\">Bang</a> or JSON) is directly sent to the <code>display.newSprite()</code> call in Corona, so it uses Corona animation properties like <code>start</code> and <code>count</code>."],
+		["p", "Right now, animation only supports <code>start</code>, <code>count</code>, and <code>time</code> parameters, no <code>frames</code> table, <code>loopDirection</code>, or <code>loopCount</code>. And it's also pretty untested. So if you find a bug in the animated tiles implementation, please file a bug report <a href=\"https://github.com/GymbylCoding/Dusk-Engine/issues\" target=\"_blank\">here</a>."],
+		["p", "That said, animation support can only get better from now on!"],
+		["hs", "Animation Example<br>(tile properties)"],
+		["code", "anim:enabled   =   true\n\
+anim:options   =   !!! start: 1 count: 16 time: 1000"],
+	]
+}

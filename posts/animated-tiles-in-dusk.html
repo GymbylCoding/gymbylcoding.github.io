@@ -1,0 +1,21 @@
+<!DOCTYPE xhtml>
+<html lang="en">
+  <head>
+    <title>Animated Tiles in Dusk</title>
+    <link rel="stylesheet" href="../resources/index.css" type="text/css"/>
+  </head>
+  <body>
+    <div id="links-bar" class="smaller"><a href="../index.html" class="site-link">home</a> | <a href="http://www.gymbyl.com" class="site-link">my 'real' website</a> | <a href="http://www.github.com/GymbylCoding" class="site-link">me on GitHub</a>
+    </div>
+    <h2 id="page-header">Animated Tiles in Dusk</h2>
+    <h5 class="post-date">December 10, 2014</h5>
+    <div id="main-content">
+      <p>Dusk now includes an early version of animated tiles! All you have to do is specify <code>anim:enabled</code> as <code>true</code> (just like physics) in Tiled on your tile properties for a tile, then <code>anim:options</code> for the animation options. <code>anim:options</code> is a table (encoded with <a href="dusks-own-serialization-format.html">Bang</a> or JSON) is directly sent to the <code>display.newSprite()</code> call in Corona, so it uses Corona animation properties like <code>start</code> and <code>count</code>.</p>
+      <p>Right now, animation only supports <code>start</code>, <code>count</code>, and <code>time</code> parameters, no <code>frames</code> table, <code>loopDirection</code>, or <code>loopCount</code>. And it's also pretty untested. So if you find a bug in the animated tiles implementation, please file a bug report <a href="https://github.com/GymbylCoding/Dusk-Engine/issues" target="_blank">here</a>.</p>
+      <p>That said, animation support can only get better from now on!</p>
+      <h4>Animation Example<br>(tile properties)</h4>
+      <pre><code>anim:enabled   =   true
+anim:options   =   !!! start: 1 count: 16 time: 1000</code></pre>
+    </div>
+  </body>
+</html>

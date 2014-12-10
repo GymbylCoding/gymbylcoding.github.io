@@ -1,7 +1,7 @@
 html {
   font-family: "Anonymous Pro", "Source Code Pro", "Lucida Console", "Courier New", "Consolas", "Droid Sans Mono", monospace;
   font-size: 12pt;
-  background-color: #eee;
+  background-color: #eef;
   color: #555;
 }
 p {
@@ -53,7 +53,7 @@ h6 {
   background-color: #ddd;
 }
 .link.alternate {
-  background-color: #eee;
+  background-color: #eef;
 }
 .link-header {
   text-align: right;

@@ -13,7 +13,8 @@ var pageTemplate = jade.compileFile("templates/main.jade", {pretty: true});
 var postTemplate = jade.compileFile("templates/post.jade", {pretty: true});
 
 var files = [
-	"dusks-own-serialization-format"
+	"dusks-own-serialization-format",
+	"animated-tiles-in-dusk"
 ]
 
 var indexContent = pageTemplate(

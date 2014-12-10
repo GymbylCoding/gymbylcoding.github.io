@@ -2,10 +2,17 @@
 	title: "Home Page",
 	header: "Home Page",
 	content: [
-		["p", "Welcome to <code>gymbylcoding.github.io</code>! This is my \"code only\" website. If you're looking for my \"real\" website, you can find it at <a href=\"http://www.gymbyl.com\"><code>www.gymbyl.com</code></a>."],
+		["p", "Welcome to <code>gymbylcoding.github.io</code>! This is my \"code only\" website. If you're looking for my \"real\" website, you can find it at <a href=\"http://www.gymbyl.com\">www.gymbyl.com</a>."],
 		[
 			"link", {
-				title: "Dusk's Own Serialization Format!",
+				title: "Animated Tiles in Dusk",
+				url: "posts/animated-tiles-in-dusk.html",
+				date: "December 10, 2014"
+			}
+		],
+		[
+			"link", {
+				title: "Dusk's Own Serialization Format",
 				url: "posts/dusks-own-serialization-format.html",
 				date: "November 30, 2014"
 			}
