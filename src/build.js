@@ -14,7 +14,9 @@ var postTemplate = jade.compileFile("templates/post.jade", {pretty: true});
 
 var files = [
 	"dusks-own-serialization-format",
-	"animated-tiles-in-dusk"
+	"animated-tiles-in-dusk",
+	// "the-future-of-dusk"
+	"the-answer-to-the-evil-flickering-tile-lines-of-doom"
 ]
 
 var indexContent = pageTemplate(
