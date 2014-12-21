@@ -1,0 +1,8 @@
+{
+	title: "Dusk + MTE",
+	date: "December 18, 2014",
+	content: [
+		["p", "MTE has been made free! MTE is a tile engine built around speed (even in its name - MTE stands for \"Million Tile Engine\") that has been Dusk's commercial counterpart for a while now. A few days ago, the developer of MTE made the engine's code publicly available (free to have, use, and edit as long as you don't resell code from the engine). Are you starting to realize something? Dusk (user-friendliness, versatility) is publicly available. MTE (super speed, feature polish) is publicly available. Can we arrange something here?"],
+		["p", "Yes! Upon hearing the news, I got permission from MTE's developer to incorporate parts of MTE into Dusk. Thus, when I get time to work on Dusk, expect to see Dusk getting some pretty amazing new features."],
+	]
+}
